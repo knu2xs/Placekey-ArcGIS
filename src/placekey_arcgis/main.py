@@ -71,7 +71,8 @@ def _get_placekey(body:dict, placekey_api_key:str = None) -> str:
 
 def get_placekey_from_geometry(geometry: Geometry, placekey_api_key: str = None) -> str:
     """
-    Lookup the full Placekey for a given Esri Point Geometry.
+    Lookup the full Placekey for a given Esri ArcGIS Python API Geometry object. If a point, obivously the coordinates
+    for the point will be used. However, if a line or a polygon, the coordinates at the centroid will be used.
 
     :param geometry: ArcGIS Python API geometry.
     :param placekey_api_key: Placekey API key for making requests.

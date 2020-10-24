@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.abspath('../../src'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'placekey_arcgis-arcgis'
+project = 'placekey-arcgis'
 copyright = '2020, Joel McCune'
 author = 'Joel McCune'
 
